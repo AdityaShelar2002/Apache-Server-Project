@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY WEBSITE</p>
+            <h1>Hello, I'm <span>Aditya</span></h1>
+            <h2>Aspiring Cloud Engineer</h2>
+            <p>
+                I build responsive websites and deploy applications
+                using modern web technologies and AWS cloud services.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a technology enthusiast interested in cloud computing,
+                Linux administration, web development, and AWS services.
+                I enjoy learning new technologies and building practical
+                projects to improve my technical skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Linux</div>
+            <div class="skill-card">AWS EC2</div>
+            <div class="skill-card">Nginx</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive personal website built using HTML,
+                    CSS, and JavaScript.
+                </p>
+                <a href="#contact">Know More →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>AWS Website Deployment</h3>
+                <p>
+                    A static website hosted on an AWS EC2 instance
+                    using a web server.
+                </p>
+                <a href="#contact">Know More →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Management</h3>
+                <p>
+                    A sample project concept for managing student
+                    information and records.
+                </p>
+                <a href="#contact">Know More →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project idea? Feel free to get in touch.</p>
+
+        <form id="contactForm">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Your Message"
+                      rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formStatus" aria-live="polite"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> MyPortfolio.
+           Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
